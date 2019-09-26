@@ -1,19 +1,11 @@
+hs.console.clearConsole()
+
 -- Variables
 hs.window.animationDuration = 0
 
 -- Macros
 -- Auto Comment
 hs.hotkey.bind({"alt"}, "C", function() hs.eventtap.keyStrokes("console.log('==>', )") end)
-
--- Layouts
-workLayout = {
-  {"Slack", nil, "Color LCD", hs.layout.maximized, nil, nil},
-  {"iTerm2", nil, "Color LCD", hs.layout.maximized, nil, nil},
-  {"Google Chrome", nil, "LG Ultra HD", hs.layout.left50, nil, nil},
-  {"Firefox", nil, "LG Ultra HD", hs.layout.left50, nil, nil},
-  {"Safari", nil, "LG Ultra HD", hs.layout.left50, nil, nil},
-  {"Atom", nil, "LG Ultra HD", hs.layout.right50, nil, nil},
-}
 
 -- Window Control
 -- Left Half Screen
@@ -102,9 +94,4 @@ end)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "left", function()
   local win = hs.window.focusedWindow()
   win:moveOneScreenWest()
-end)
-
--- Apply Work Layout
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "down", function()
-  hs.layout.apply(workLayout)
 end)
