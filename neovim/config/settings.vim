@@ -28,7 +28,7 @@ set clipboard+=unnamedplus
 
 " Mouse Stuff
 " use mouse integration
-" set mouse=a
+set mouse=a
 
 " Indentation Stuff
 filetype plugin indent on

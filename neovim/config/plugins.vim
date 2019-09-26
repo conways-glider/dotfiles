@@ -62,5 +62,11 @@ Plug 'w0rp/ale'
 " EasyMotion
 Plug 'easymotion/vim-easymotion'
 
+" Prettier
+Plug 'prettier/vim-prettier'
+
+" RustLang
+Plug 'rust-lang/rust.vim'
+
 " Initialize plugin system
 call plug#end()
