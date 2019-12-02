@@ -38,3 +38,6 @@ source $HOME/.config/nvim/config/jsdoc.vim
 
 " EasyMotion
 source $HOME/.config/nvim/config/easy-motion.vim
+
+" Prettier
+source $HOME/.config/nvim/config/prettier.vim
