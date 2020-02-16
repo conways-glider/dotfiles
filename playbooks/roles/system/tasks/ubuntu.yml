@@ -1,0 +1,30 @@
+---
+- name: Install curl
+  apt:
+    name: curl
+    state: present
+
+- name: Install git
+  apt:
+    name: git
+    state: present
+
+- name: Install zsh
+  apt:
+    name: zsh
+    state: present
+
+- name: Install neovim
+  apt:
+    name: neovim
+    state: present
+
+- name: Install firacode font
+  apt:
+    name: fonts-firacode
+    state: present
+
+- name: Update shell
+  user:
+    name: nwatts
+    shell: /bin/zsh

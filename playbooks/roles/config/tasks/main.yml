@@ -1,0 +1,7 @@
+---
+- name: Create .config folder
+  file:
+    path: /~/.config
+    state: directory
+    mode: '0755'
+- name: Link neovim config
