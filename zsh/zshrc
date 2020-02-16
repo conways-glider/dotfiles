@@ -1,41 +1,12 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH=~/.oh-my-zsh
-
-# theme
-ZSH_THEME=""
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
-
-# oh my zsh plugins
-plugins=(git python virtualenv tmux zsh-autosuggestions zsh-syntax-highlighting)
-
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
 # set default user
 DEFAULT_USER='nwatts'
 
-# Color Rules
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # Local RC
 test -e "${HOME}/.zsh_local_rc" && source "${HOME}/.zsh_local_rc"
@@ -47,18 +18,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 alias vi="nvim"
 alias vim="nvim"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # pure prompt
+fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
-
-# golang setup
-export GOPATH=$HOME/go-workspace
-export PATH=$PATH:$GOPATH/bin
-
-# npm setup
-export PATH=$PATH:$HOME/.npm-packages/bin
 
 # editor setup
 export VISUAL=nvim
