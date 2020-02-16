@@ -1,5 +1,12 @@
 ---
 - hosts: localhost
   roles:
-    - system
-    - config
+    - role: system
+      tags:
+        - required
+    - role: config
+      tags:
+        - required
+    - role: optional
+      tags:
+        - optional
