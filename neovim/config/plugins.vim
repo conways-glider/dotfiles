@@ -16,10 +16,10 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 
 " deoplete.nvim - Autocomplete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'ervandew/supertab'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'ervandew/supertab'
 
-" Vim Fugitive - Git Contorls
+" Vim Fugitive - Git Controls
 Plug 'tpope/vim-fugitive'
 
 " Vim Surround - Surround text
@@ -30,8 +30,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " fzf - Fuzzy Finder
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" Plug 'junegunn/fzf.vim'
 
 " vim-move - Move Line(s) of code
 Plug 'matze/vim-move'
@@ -48,11 +48,6 @@ Plug 'tpope/vim-vinegar'
 " Base16
 Plug 'chriskempson/base16-vim'
 
-" javascript
-Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'jsx'] }
-Plug 'mxw/vim-jsx', { 'for': ['javascript', 'jsx'] }
-Plug 'heavenshell/vim-jsdoc'
-
 " rust-lang
 Plug 'rust-lang/rust.vim'
 
@@ -64,9 +59,6 @@ Plug 'easymotion/vim-easymotion'
 
 " Prettier
 Plug 'prettier/vim-prettier'
-
-" RustLang
-Plug 'rust-lang/rust.vim'
 
 " Initialize plugin system
 call plug#end()

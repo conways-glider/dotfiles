@@ -1,3 +1,0 @@
-MAILTO=""
-
-0 13 * * 1-5 ~/rc/cron/update.sh

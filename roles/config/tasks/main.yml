@@ -1,0 +1,37 @@
+---
+- name: Install vim plug
+  shell: curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+- name: Clean base16-shell
+  file:
+    state: absent
+    path: $HOME/.config/base16-shell
+
+- name: Install base16-shell
+  shell: git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+
+- name: Clean pure shell
+  file:
+    state: absent
+    path: $HOME/.zsh/pure
+
+- name: Install pure shell
+  shell: git clone https://github.com/sindresorhus/pure.git ~/.zsh/pure
+
+- name: Create .config folder
+  file:
+    path: $HOME/.config
+    state: directory
+    mode: '0750'
+
+- name: Link neovim config
+  file:
+    src: '{{playbook_dir}}/neovim'
+    dest: $HOME/.config/nvim
+    state: link
+
+- name: Link zsh config
+  file:
+    src: '{{playbook_dir}}/zsh/zshrc'
+    dest: $HOME/.zshrc
+    state: link
