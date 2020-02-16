@@ -23,7 +23,7 @@
     state: present
   become: yes
 
-- name: Install firacode font
+- name: Install FiraCode font
   apt:
     name: fonts-firacode
     state: present

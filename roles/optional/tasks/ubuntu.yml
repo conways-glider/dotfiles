@@ -1,12 +1,39 @@
 ---
-- name: Install intellij
+- name: Install IntelliJ
   snap:
     name: intellij-idea-ultimate
     classic: yes
   become: yes
 
-- name: Install vscode
+- name: Install VSCode
   snap:
     name: code
     classic: yes
+  become: yes
+
+- name: Install guake
+  apt:
+    name: guake
+    state: present
+  become: yes
+
+- name: Install Spotify
+  snap:
+    name: spotify
+  become: yes
+
+- name: Install BitWarden
+  snap:
+    name: bitwarden
+  become: yes
+
+- name: Install Slack
+  snap:
+    name: slack
+    classic: yes
+  become: yes
+
+- name: Install VLC
+  snap:
+    name: vlc
   become: yes
