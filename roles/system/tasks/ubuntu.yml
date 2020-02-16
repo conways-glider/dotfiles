@@ -3,28 +3,33 @@
   apt:
     name: curl
     state: present
+  become: yes
 
 - name: Install git
   apt:
     name: git
     state: present
+  become: yes
 
 - name: Install zsh
   apt:
     name: zsh
     state: present
+  become: yes
 
 - name: Install neovim
   apt:
     name: neovim
     state: present
+  become: yes
 
 - name: Install firacode font
   apt:
     name: fonts-firacode
     state: present
+  become: yes
 
 - name: Update shell
   user:
-    name: nwatts
+    name: '{{ ansible_user }}'
     shell: /bin/zsh

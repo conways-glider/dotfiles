@@ -2,6 +2,14 @@
 
 ## A collection of Configuration Files
 
+### Running
+
+To run the full playbook, run:
+
+```
+ansible-playbook setup.yml --ask-become-pass
+```
+
 ### .vimrc
 
 This vim configuration relies on Vim-Plug, which can be found here: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug). After installing this, open vim and run: `:PlugInstall`.

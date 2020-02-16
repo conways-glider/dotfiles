@@ -12,9 +12,6 @@ source $HOME/.config/nvim/config/nerd-tree.vim
 " NERDCommenter
 source $HOME/.config/nvim/config/nerd-commenter.vim
 
-" Deoplete
-source $HOME/.config/nvim/config/deoplete.vim
-
 " numbers.vim
 source $HOME/.config/nvim/config/numbers.vim
 
@@ -32,9 +29,6 @@ source $HOME/.config/nvim/config/airline.vim
 
 " fzf
 source $HOME/.config/nvim/config/fzf.vim
-
-" JSDoc
-source $HOME/.config/nvim/config/jsdoc.vim
 
 " EasyMotion
 source $HOME/.config/nvim/config/easy-motion.vim
