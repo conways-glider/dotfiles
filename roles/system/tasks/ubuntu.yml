@@ -28,8 +28,7 @@
     name: fonts-firacode
     state: present
   become: yes
-
-- name: Update shell
-  user:
-    name: '{{ ansible_user }}'
-    shell: /bin/zsh
+# - name: Update shell
+#   user:
+#     name: '{{ ansible_user }}'
+#     shell: /bin/zsh
