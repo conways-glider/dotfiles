@@ -37,3 +37,9 @@
   snap:
     name: vlc
   become: yes
+
+- name: Install ripgrep
+  apt:
+    name: ripgrep
+    state: present
+  become: yes
