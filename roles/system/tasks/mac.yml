@@ -1,0 +1,10 @@
+---
+- name: Install zsh
+  homebrew:
+    name: zsh
+    state: present
+
+- name: Install neovim
+  homebrew:
+    name: neovim
+    state: present
