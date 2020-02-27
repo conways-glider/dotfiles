@@ -1,5 +1,5 @@
 ---
-- name: Add sbt repository
+- name: Add go repository
   apt_repository:
     repo: ppa:longsleep/golang-backports
     state: present
@@ -10,7 +10,7 @@
     update_cache: yes
   become: yes
 
-- name: Install sbt
+- name: Install go
   apt:
     name: golang-go
     state: present
