@@ -18,6 +18,10 @@
       tags:
         - development
         - rust
+    - role: go
+      tags:
+        - development
+        - go
     - role: gitconfig
       tags:
         - development
