@@ -13,6 +13,7 @@ test -e "${HOME}/.zsh_local_rc" && source "${HOME}/.zsh_local_rc"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # aliases
+alias g="git"
 alias vi="nvim"
 alias vim="nvim"
 

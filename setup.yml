@@ -18,3 +18,7 @@
       tags:
         - development
         - rust
+    - role: gitconfig
+      tags:
+        - development
+        - git
