@@ -32,3 +32,14 @@
 #   user:
 #     name: '{{ ansible_user }}'
 #     shell: /bin/zsh
+- name: Install exfat-fuse
+  apt:
+    name: exfat-fuse
+    state: present
+  become: yes
+
+- name: Install exfat-utils
+  apt:
+    name: exfat-utils
+    state: present
+  become: yes
