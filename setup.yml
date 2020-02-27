@@ -12,4 +12,9 @@
         - optional
     - role: scala
       tags:
+        - development
         - scala
+    - role: rust
+      tags:
+        - development
+        - rust
