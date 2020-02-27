@@ -10,3 +10,6 @@
     - role: optional
       tags:
         - optional
+    - role: scala
+      tags:
+        - scala
