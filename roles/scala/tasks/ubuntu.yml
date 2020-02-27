@@ -29,3 +29,9 @@
     name: sbt
     state: present
   become: yes
+
+- name: Install scala
+  apt:
+    name: scala
+    state: present
+  become: yes
