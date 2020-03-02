@@ -53,3 +53,13 @@
     name: alias.a
     scope: global
     value: add
+
+- git_config:
+    name: alias.b
+    scope: global
+    value: branch
+
+- git_config:
+    name: alias.bd
+    scope: global
+    value: branch -D
