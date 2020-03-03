@@ -25,3 +25,20 @@ prompt pure
 # editor setup
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+
+# autocompletion
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+zstyle ':completion:*' list-suffixes
+zstyle ':completion:*' expand prefix suffix
+# case insensitive path-completion
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+autoload -Uz compinit && compinit
+autoload bashcompinit && bashcompinit
+
+# history
+HISTFILE=~/.zsh_histfile
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
