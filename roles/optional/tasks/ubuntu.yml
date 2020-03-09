@@ -43,3 +43,8 @@
     name: ripgrep
     state: present
   become: yes
+
+- name: Install Insomnia
+  snap:
+    name: insomnia
+  become: yes
