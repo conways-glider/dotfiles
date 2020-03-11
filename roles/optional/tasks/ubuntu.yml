@@ -3,12 +3,14 @@
   snap:
     name: intellij-idea-ultimate
     classic: yes
+    state: present
   become: yes
 
 - name: Install VSCode
   snap:
     name: code
     classic: yes
+    state: present
   become: yes
 
 - name: Install guake
@@ -20,22 +22,26 @@
 - name: Install Spotify
   snap:
     name: spotify
+    state: present
   become: yes
 
 - name: Install BitWarden
   snap:
     name: bitwarden
+    state: present
   become: yes
 
 - name: Install Slack
   snap:
     name: slack
     classic: yes
+    state: present
   become: yes
 
 - name: Install VLC
   snap:
     name: vlc
+    state: present
   become: yes
 
 - name: Install ripgrep
@@ -47,4 +53,12 @@
 - name: Install Insomnia
   snap:
     name: insomnia
+    state: present
+  become: yes
+
+- name: Install Heroku
+  snap:
+    name: heroku
+    state: present
+    classic: yes
   become: yes
