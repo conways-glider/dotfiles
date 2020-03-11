@@ -22,6 +22,10 @@
       tags:
         - development
         - go
+    - role: python
+      tags:
+        - development
+        - python
     - role: gitconfig
       tags:
         - development
