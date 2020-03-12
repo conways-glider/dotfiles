@@ -17,6 +17,12 @@
     state: present
   become: yes
 
+- name: Change default shell to zsh
+  user:
+    name: "{{ username | mandatory }}"
+    shell: /bin/zsh
+  become: yes
+
 - name: Install neovim
   apt:
     name: neovim
@@ -28,10 +34,7 @@
     name: fonts-firacode
     state: present
   become: yes
-# - name: Update shell
-#   user:
-#     name: '{{ ansible_user }}'
-#     shell: /bin/zsh
+
 - name: Install exfat-fuse
   apt:
     name: exfat-fuse

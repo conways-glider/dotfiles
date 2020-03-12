@@ -7,7 +7,7 @@
 To run the full playbook, run:
 
 ```
-ansible-playbook setup.yml --ask-become-pass
+ansible-playbook setup.yml --ask-become-pass --extra-vars username={YOUR USERNAME}
 ```
 
 ### .vimrc
