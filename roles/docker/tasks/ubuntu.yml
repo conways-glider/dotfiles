@@ -16,3 +16,16 @@
     update_cache: yes
     state: present
   become: yes
+
+- name: Add docker group
+  group:
+    name: docker
+    state: present
+  become: yes
+
+- name: Add user to docker group
+  user:
+    name: '{{ ansible_user }}'
+    groups: docker
+    append: yes
+  become: yes
