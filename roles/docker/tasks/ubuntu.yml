@@ -10,10 +10,14 @@
     repo: deb [arch=amd64] https://download.docker.com/linux/{{ansible_distribution|lower}} {{ansible_distribution_release}} stable
   become: yes
 
+- name: Update apt
+  apt:
+    update_cache: yes
+  become: yes
+
 - name: Install docker-ce
   apt:
     name: docker-ce
-    update_cache: yes
     state: present
   become: yes
 
