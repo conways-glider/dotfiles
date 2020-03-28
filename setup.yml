@@ -10,6 +10,10 @@
     - role: optional
       tags:
         - optional
+    - role: docker
+      tags:
+        - development
+        - docker
     - role: scala
       tags:
         - development

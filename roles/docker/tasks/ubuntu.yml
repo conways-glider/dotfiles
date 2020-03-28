@@ -1,0 +1,18 @@
+---
+- name: Add docker signing key
+  apt_key:
+    url: https://ftp-master.debian.org/keys/archive-key-6.0.asc
+    state: present
+  become: yes
+
+- name: Add docker repository
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/{{ansible_distribution|lower}} {{ansible_distribution_release}} stable
+  become: yes
+
+- name: Install docker-ce
+  apt:
+    name: docker-ce
+    update_cache: yes
+    state: present
+  become: yes
