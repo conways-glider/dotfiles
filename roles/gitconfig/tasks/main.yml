@@ -63,3 +63,9 @@
     name: alias.bd
     scope: global
     value: branch -D
+
+- git_config:
+    name: alias.rhh
+    scope: global
+    value: reset --hard HEAD
+
