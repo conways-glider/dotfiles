@@ -8,11 +8,8 @@
 - name: Add docker repository
   apt_repository:
     repo: deb [arch=amd64] https://download.docker.com/linux/{{ansible_distribution|lower}} {{ansible_distribution_release}} stable
-  become: yes
-
-- name: Update apt
-  apt:
-    update_cache: yes
+    state: present
+    update_cache: true
   become: yes
 
 - name: Install docker-ce
