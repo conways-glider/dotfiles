@@ -14,18 +14,10 @@
       tags:
         - development
         - docker
-    - role: scala
-      tags:
-        - development
-        - scala
     - role: rust
       tags:
         - development
         - rust
-    - role: go
-      tags:
-        - development
-        - go
     - role: python
       tags:
         - development

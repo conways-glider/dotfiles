@@ -1,7 +1,7 @@
 ---
 - name: Add docker signing key
   apt_key:
-    url: https://ftp-master.debian.org/keys/archive-key-6.0.asc
+    url: https://download.docker.com/linux/ubuntu/gpg
     state: present
   become: yes
 

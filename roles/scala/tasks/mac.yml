@@ -1,5 +1,0 @@
----
-- name: Install sbt
-  homebrew:
-    name: sbt
-    state: present
