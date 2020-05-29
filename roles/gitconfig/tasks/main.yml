@@ -1,8 +1,19 @@
 ---
+- name: Link Git Ignore File
+  file:
+    src: '{{playbook_dir}}/git/gitignore'
+    dest: $HOME/.gitignore
+    state: link
+
 - git_config:
     name: push.default
     scope: global
     value: simple
+
+- git_config:
+    name: core.excludesfile
+    scope: global
+    value: ~/.gitignore
 
 - git_config:
     name: alias.co
