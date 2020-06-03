@@ -26,3 +26,7 @@
       tags:
         - development
         - git
+    - role: riot
+      tags:
+        - social
+        - riot
