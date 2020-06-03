@@ -1,0 +1,9 @@
+---
+- name: Install Discord
+  snap:
+    name: discord
+    state: present
+
+- name: Connect Discord
+  shell: snap connect discord:system-observe
+  become: yes

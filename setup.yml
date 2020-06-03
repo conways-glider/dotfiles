@@ -26,6 +26,10 @@
       tags:
         - development
         - git
+    - role: discord
+      tags:
+        - social
+        - discord
     - role: riot
       tags:
         - social
