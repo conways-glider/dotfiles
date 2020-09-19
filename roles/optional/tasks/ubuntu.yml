@@ -20,13 +20,6 @@
     state: present
   become: yes
 
-- name: Install GoLand
-  snap:
-    name: goland
-    classic: yes
-    state: present
-  become: yes
-
 - name: Install PyCharm
   snap:
     name: pycharm-professional
