@@ -22,6 +22,10 @@
       tags:
         - development
         - python
+    - role: nvm
+      tags:
+        - development
+        - nvm
     - role: gitconfig
       tags:
         - development
@@ -30,7 +34,3 @@
       tags:
         - social
         - discord
-    - role: riot
-      tags:
-        - social
-        - riot
