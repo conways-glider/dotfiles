@@ -3,6 +3,7 @@
   snap:
     name: discord
     state: present
+  become: yes
 
 - name: Connect Discord
   shell: snap connect discord:system-observe
