@@ -1,6 +1,0 @@
----
-- name: Install pipenv
-  apt:
-    name: pipenv
-    state: present
-  become: yes

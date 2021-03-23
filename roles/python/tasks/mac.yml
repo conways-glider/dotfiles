@@ -1,5 +1,0 @@
----
-- name: Install pipenv
-  homebrew:
-    name: pipenv
-    state: present

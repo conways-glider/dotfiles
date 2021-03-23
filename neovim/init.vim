@@ -1,37 +1,49 @@
-" fluffy-samurai neovim config
+" Remap Movement
+nnoremap <silent> <C-Right> <c-w>l
+nnoremap <silent> <C-Left> <c-w>h
+nnoremap <silent> <C-Up> <c-w>k
+nnoremap <silent> <C-Down> <c-w>j
+nnoremap <silent> <A-Right> gt
+nnoremap <silent> <A-Left> gT
 
-" Plugins
-source $HOME/.config/nvim/config/plugins.vim
+" move up and down by row
+nnoremap j gj
+nnoremap k gk
 
-" Vim Config Settings
-source $HOME/.config/nvim/config/settings.vim
+" search
+set hlsearch
+set ignorecase
+set incsearch
+set smartcase
+nmap <silent> <Space>c :set hlsearch!<CR>
 
-" NERDTree
-source $HOME/.config/nvim/config/nerd-tree.vim
+" Stop vim from creating automatic backups
+set noswapfile
+set nobackup
+set nowb
 
-" NERDCommenter
-source $HOME/.config/nvim/config/nerd-commenter.vim
+" Clipboard Stuff
+" always use system clipboard
+set clipboard+=unnamedplus
 
-" numbers.vim
-source $HOME/.config/nvim/config/numbers.vim
+" Mouse Stuff
+" use mouse integration
+set mouse=a
 
-" Base16-Shell
-source $HOME/.config/nvim/config/base16-shell.vim
+" Indentation Stuff
+filetype plugin indent on
+" show existing tab with 2 spaces width
+set tabstop=2
+" when indenting with '>', use 2 spaces width
+set shiftwidth=2
+" On pressing tab, insert 2 spaces
+set expandtab
 
-" Ale
-source $HOME/.config/nvim/config/ale.vim
+" Leader Setting => Space
+let mapleader=" "
 
-" Vim Move
-source $HOME/.config/nvim/config/vim-move.vim
+" Remove trailing whitespace
+autocmd BufWritePre * %s/\s\+$//e
 
-" Airline
-source $HOME/.config/nvim/config/airline.vim
-
-" fzf
-source $HOME/.config/nvim/config/fzf.vim
-
-" EasyMotion
-source $HOME/.config/nvim/config/easy-motion.vim
-
-" Prettier
-source $HOME/.config/nvim/config/prettier.vim
+" Set Color Column
+" set colorcolumn=80

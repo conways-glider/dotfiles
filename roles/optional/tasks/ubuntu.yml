@@ -20,13 +20,6 @@
     state: present
   become: yes
 
-- name: Install PyCharm
-  snap:
-    name: pycharm-professional
-    classic: yes
-    state: present
-  become: yes
-
 - name: Install VSCode
   snap:
     name: code
