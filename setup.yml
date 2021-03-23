@@ -18,6 +18,10 @@
       tags:
         - development
         - rust
+    - role: nvm
+      tags:
+        - development
+        - nvm
     - role: gitconfig
       tags:
         - development
