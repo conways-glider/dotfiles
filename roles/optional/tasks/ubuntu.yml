@@ -20,6 +20,13 @@
     state: present
   become: yes
 
+- name: Install WebStorm
+  snap:
+    name: webstorm
+    classic: yes
+    state: present
+  become: yes
+
 - name: Install VSCode
   snap:
     name: code
