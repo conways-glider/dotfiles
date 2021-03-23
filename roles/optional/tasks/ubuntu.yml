@@ -1,11 +1,4 @@
 ---
-- name: Install IntelliJ
-  snap:
-    name: intellij-idea-ultimate
-    classic: yes
-    state: present
-  become: yes
-
 - name: Install DataGrip
   snap:
     name: datagrip
@@ -16,6 +9,13 @@
 - name: Install CLion
   snap:
     name: clion
+    classic: yes
+    state: present
+  become: yes
+
+- name: Install GoLand
+  snap:
+    name: goland
     classic: yes
     state: present
   become: yes
