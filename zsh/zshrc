@@ -13,6 +13,7 @@ test -e "${HOME}/.zsh_local_rc" && source "${HOME}/.zsh_local_rc"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Go Path
+test -e "/usr/local/go/bin" && export PATH=$PATH:/usr/local/go/bin
 test -e "${HOME}/go/bin" && export PATH=$PATH:/$HOME/go/bin
 
 # aliases
