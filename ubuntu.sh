@@ -9,7 +9,7 @@ mkdir -p ~/.zsh
 sudo ./install/install_ubuntu.sh
 
 # Install docker
-if ! [ -x "$(command -v docker)" ]; then
+if [[ ! -x "$(command -v docker)" ]]; then
   curl -fsSL https://get.docker.com -o get-docker.sh
 
   sudo sh get-docker.sh
