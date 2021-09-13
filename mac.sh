@@ -22,7 +22,9 @@ fi
 chsh -s "$WHICH_ZSH"
 
 # Install rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+if [[ ! -x "$(command -v rustup)" ]]; then
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+fi
 
 # Install go
 brew install go
