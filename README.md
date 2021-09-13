@@ -6,3 +6,4 @@
 
 - Add neovim
 - Add kubectx
+- Add alacritty config
