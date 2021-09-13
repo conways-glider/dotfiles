@@ -12,7 +12,14 @@ brew upgrade
 
 # Install zsh
 brew install zsh
-chsh -s "$(command -v zsh)"
+
+WHICH_ZSH=$(command -v zsh)
+
+if [[ -z "$(grep "$WHICH_ZSH" /etc/shells)" ]]; then
+  echo "$WHICH_ZSH" | sudo tee -a /etc/shell
+fi
+
+chsh -s "$WHICH_ZSH"
 
 # Install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
