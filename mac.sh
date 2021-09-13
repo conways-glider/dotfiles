@@ -16,7 +16,7 @@ brew install zsh
 WHICH_ZSH=$(command -v zsh)
 
 if ! grep -q "$WHICH_ZSH" /etc/shells; then
-  echo "$WHICH_ZSH" | sudo tee -a /etc/shell
+  echo "$WHICH_ZSH" | sudo tee -a /etc/shells
 fi
 
 chsh -s "$WHICH_ZSH"
