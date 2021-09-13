@@ -10,8 +10,8 @@ fi
 brew update
 brew upgrade
 
-# Install zsh
 brew install zsh
+brew install ripgrep
 
 WHICH_ZSH=$(command -v zsh)
 
@@ -22,25 +22,14 @@ fi
 chsh -s "$WHICH_ZSH"
 
 # Install rust
-if [[ ! -x "$(command -v rustup)" ]]; then
-  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-fi
+./install/rust.sh
 
 # Install go
 brew install go
 
-# Install Base16 Shell
-rm -rf ~/.config/base16-shell
-git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-
 # Install Spaceship
 brew install spaceship
 
-# Link zsh config
-rm -f ~/.zshrc
-ln -sf "$(pwd)"/zsh/zshrc ~/.zshrc
+./install/link.sh
 
-# Link neovim config
-#ln -sf $(pwd)/neovim ~/.config/nvim
-
-./install/git.sh
+./install/configure_git.sh

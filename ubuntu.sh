@@ -6,7 +6,7 @@ set -eou pipefail
 mkdir -p ~/.config
 mkdir -p ~/.zsh
 
-sudo ./install/ubuntu/install_apt_snap.sh
+sudo ./install/ubuntu/apt_snap.sh
 
 # Install docker
 if [[ ! -x "$(command -v docker)" ]]; then
@@ -22,36 +22,24 @@ if [[ ! -x "$(command -v docker)" ]]; then
 fi
 
 if [[ ! -x "$(command -v kubectl)" ]]; then
-  ./install/ubuntu/install_kubernetes.sh
+  ./install/ubuntu/kubernetes.sh
 fi
 
-# Install rust
-if [[ ! -x "$(command -v rustup)" ]]; then
-  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-fi
+./install/rust.sh
 
 # Install go
 if [[ ! -x "$(command -v go)" ]]; then
-  ./install/ubuntu/install_go.sh
+  ./install/ubuntu/go.sh
 fi
 
 # Install zsh and make default
 chsh -s "$(command -v zsh)"
-
-# Install Base16 Shell
-rm -rf ~/.config/base16-shell
-git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 
 # Install Spaceship
 rm -rf ~/.zsh/spaceship
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git --depth=1 ~/.zsh/spaceship
 ln -sf ~/.zsh/spaceship/spaceship.zsh ~/.zsh/prompt_spaceship_setup
 
-# Link zsh config
-rm -f ~/.zshrc
-ln -sf "$(pwd)"/zsh/zshrc ~/.zshrc
+./install/link.sh
 
-# Link neovim config
-#ln -sf $(pwd)/neovim ~/.config/nvim
-
-./install/git.sh
+./install/configure_git.sh
