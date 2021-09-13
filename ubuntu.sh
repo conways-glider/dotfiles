@@ -6,7 +6,7 @@ set -eou pipefail
 mkdir -p ~/.config
 mkdir -p ~/.zsh
 
-sudo ./install/install_ubuntu.sh
+sudo ./install/ubuntu/install_apt_snap.sh
 
 # Install docker
 if [[ ! -x "$(command -v docker)" ]]; then
@@ -21,6 +21,10 @@ if [[ ! -x "$(command -v docker)" ]]; then
   sudo usermod -aG docker "$USER"
 fi
 
+if [[ ! -x "$(command -v kubectl)" ]]; then
+  ./install/ubuntu/install_kubernetes.sh
+fi
+
 # Install rust
 if [[ ! -x "$(command -v rustup)" ]]; then
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
@@ -28,7 +32,7 @@ fi
 
 # Install go
 if [[ ! -x "$(command -v go)" ]]; then
-  ./install/install_go_ubuntu.sh
+  ./install/ubuntu/install_go.sh
 fi
 
 # Install zsh and make default

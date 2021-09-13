@@ -2,6 +2,8 @@
 
 set -eou pipefail
 
+echo "Configuring git"
+
 # Configure git
 git config --global alias.co 'checkout'
 git config --global alias.cob 'checkout -b'
