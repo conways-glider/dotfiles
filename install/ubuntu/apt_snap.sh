@@ -10,12 +10,12 @@ apt update && apt upgrade
 
 # Install items
 apt -y install \
-    shellcheck \
-    curl \
-    git-all \
-    zsh \
-    fonts-firacode \
-    ripgrep
+  shellcheck \
+  curl \
+  git-all \
+  zsh \
+  fonts-firacode \
+  ripgrep
 
 snap install --classic datagrip
 snap install --classic clion
