@@ -42,4 +42,6 @@ ln -sf ~/.zsh/spaceship/spaceship.zsh ~/.zsh/prompt_spaceship_setup
 
 ./install/link.sh
 
+./install/fzf.sh
+
 ./install/configure_git.sh

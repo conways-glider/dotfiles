@@ -12,9 +12,10 @@ fi
 
 chsh -s "$WHICH_ZSH"
 
-# Install rust
 ./install/rust.sh
 
 ./install/link.sh
+
+./install/fzf.sh
 
 ./install/configure_git.sh
