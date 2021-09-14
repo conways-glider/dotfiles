@@ -25,8 +25,6 @@ if [[ ! -x "$(command -v kubectl)" ]]; then
   ./install/ubuntu/kubernetes.sh
 fi
 
-./install/rust.sh
-
 # Install go
 if [[ ! -x "$(command -v go)" ]]; then
   ./install/ubuntu/go.sh
@@ -39,6 +37,8 @@ chsh -s "$(command -v zsh)"
 rm -rf ~/.zsh/spaceship
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git --depth=1 ~/.zsh/spaceship
 ln -sf ~/.zsh/spaceship/spaceship.zsh ~/.zsh/prompt_spaceship_setup
+
+./install/rust.sh
 
 ./install/link.sh
 

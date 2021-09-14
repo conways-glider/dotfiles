@@ -49,8 +49,8 @@ autoload -U +X bashcompinit && bashcompinit
 
 # history
 HISTFILE=~/.zsh_histfile
-HISTSIZE=100000
-SAVEHIST=100000
+HISTSIZE=10000
+SAVEHIST=$HISTSIZE
 setopt append_history
 setopt share_history
 
