@@ -5,6 +5,7 @@ set -eou pipefail
 echo "Configuring git"
 
 # Configure git
+# Aliases
 git config --global alias.co 'checkout'
 git config --global alias.cob 'checkout -b'
 git config --global alias.p 'push'
@@ -18,3 +19,6 @@ git config --global alias.a 'add'
 git config --global alias.b 'branch'
 git config --global alias.r 'reset'
 git config --global alias.rhh 'reset --hard HEAD'
+
+# .gitignore
+git config --global core.excludesFile '~/.gitignore'
