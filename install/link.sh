@@ -11,6 +11,9 @@ rm -f ~/.zshrc
 ln -sf "$(pwd)"/zsh/zshrc ~/.zshrc
 
 # Link neovim config
-#ln -sf $(pwd)/neovim ~/.config/nvim
+rm -rf ~/.config/nvim
+ln -sf "$(pwd)"/neovim ~/.config/nvim
+
+# Link gitignore
 rm -f ~/.gitignore
 ln -sf "$(pwd)"/git/gitignore ~/.gitignore

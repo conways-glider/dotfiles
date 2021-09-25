@@ -22,6 +22,7 @@ snap install --classic clion
 snap install --classic goland
 snap install --classic webstorm
 snap install --classic code
+snap install --classic --beta nvim
 # snap install --classic alacritty
 # snap install --classic heroku
 # snap install guake

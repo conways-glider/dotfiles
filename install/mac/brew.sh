@@ -16,4 +16,5 @@ brew install \
   zsh \
   ripgrep \
   go \
-  spaceship
+  spaceship \
+  neovim

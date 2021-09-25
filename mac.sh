@@ -18,4 +18,6 @@ chsh -s "$WHICH_ZSH"
 
 ./install/fzf.sh
 
+./install/nvm.sh
+
 ./install/configure_git.sh
