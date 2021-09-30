@@ -12,6 +12,10 @@ fi
 
 chsh -s "$WHICH_ZSH"
 
+if [[ ! -x "$(command -v kubectl)" ]]; then
+  ./install/ubuntu/kubernetes.sh
+fi
+
 ./install/rust.sh
 
 ./install/link.sh
