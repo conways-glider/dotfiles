@@ -16,5 +16,6 @@ brew install \
   zsh \
   ripgrep \
   go \
+  golangci-lint \
   spaceship \
   neovim

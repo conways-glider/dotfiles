@@ -16,3 +16,4 @@ sudo rm -rf ~/go
 
 # Install packages
 go install sigs.k8s.io/kind@latest
+curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
