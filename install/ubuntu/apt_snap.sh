@@ -15,7 +15,8 @@ apt -y install \
   git-all \
   zsh \
   fonts-firacode \
-  ripgrep
+  ripgrep \
+  tmux
 
 snap install --classic datagrip
 snap install --classic clion

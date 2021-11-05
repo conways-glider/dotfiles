@@ -14,13 +14,14 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # Go Path
 test -e "/usr/local/go/bin" && export PATH=$PATH:/usr/local/go/bin
-test -e "${HOME}/go/bin" && export PATH=$PATH:/$HOME/go/bin
+test -e "${HOME}/go/bin" && export PATH=$PATH:$HOME/go/bin
 
 # aliases
 alias g="git"
 alias vi="nvim"
 alias vim="nvim"
 alias k="kubectl"
+alias t="tmux"
 
 # pure prompt
 fpath+=$HOME/.zsh
@@ -75,3 +76,4 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

@@ -10,6 +10,14 @@ git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shel
 rm -f ~/.zshrc
 ln -sf "$(pwd)"/zsh/zshrc ~/.zshrc
 
+# Install tmux plugin manager
+rm -rf ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Link tmux config
+rm -f ~/.tmux.conf
+ln -sf "$(pwd)"/tmux/tmux.conf ~/.tmux.conf
+
 # Link neovim config
 rm -rf ~/.config/nvim
 ln -sf "$(pwd)"/neovim ~/.config/nvim
