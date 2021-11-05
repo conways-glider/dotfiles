@@ -9,6 +9,9 @@ git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shel
 # Link zsh config
 rm -f ~/.zshrc
 ln -sf "$(pwd)"/zsh/zshrc ~/.zshrc
+rm -f ~/.zprofile
+ln -sf "$(pwd)"/zsh/zprofile ~/.zprofile
+
 
 # Link neovim config
 rm -rf ~/.config/nvim
