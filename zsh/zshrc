@@ -55,10 +55,6 @@ SAVEHIST=$HISTSIZE
 setopt append_history
 setopt share_history
 
-# nvm
-# export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
 # Autocomplete
 if [[ -x "$(command -v kubectl)" ]]; then
   source <(kubectl completion zsh)
@@ -67,6 +63,7 @@ fi
 if [[ -x "$(command -v pipenv)" ]]; then
   eval "$(pipenv --completion)"
 fi
+
 # nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
