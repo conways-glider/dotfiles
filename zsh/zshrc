@@ -69,9 +69,13 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # python config
-if [[ -x "$(command -v pyenv)" ]]; then
-  export PYENV_ROOT="$HOME/.pyenv"
+export PYENV_ROOT="$HOME/.pyenv"
+
+if [[ -d "$PYENV_ROOT" ]]; then
   export PATH="$PYENV_ROOT/bin:$PATH"
+fi
+
+if [[ -x "$(command -v pyenv)" ]]; then
   eval "$(pyenv init --path)"
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"

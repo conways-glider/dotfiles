@@ -40,6 +40,8 @@ ln -sf ~/.zsh/spaceship/spaceship.zsh ~/.zsh/prompt_spaceship_setup
 
 ./install/rust.sh
 
+./install/python.sh
+
 ./install/link.sh
 
 ./install/fzf.sh

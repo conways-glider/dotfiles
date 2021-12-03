@@ -18,6 +18,8 @@ fi
 
 ./install/rust.sh
 
+./install/python.sh
+
 ./install/link.sh
 
 ./install/fzf.sh
