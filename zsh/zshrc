@@ -75,6 +75,10 @@ if [[ -d "$PYENV_ROOT" ]]; then
   export PATH="$PYENV_ROOT/bin:$PATH"
 fi
 
+if [[ -d "$HOME/.local/bin" ]]; then
+  export PATH="$HOME/.local/bin:$PATH"
+fi
+
 if [[ -x "$(command -v pyenv)" ]]; then
   eval "$(pyenv init --path)"
   eval "$(pyenv init -)"
