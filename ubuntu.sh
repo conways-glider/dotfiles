@@ -48,6 +48,4 @@ ln -sf ~/.zsh/spaceship/spaceship.zsh ~/.zsh/prompt_spaceship_setup
 
 ./install/fzf.sh
 
-./install/nvm.sh
-
 ./install/configure_git.sh

@@ -22,6 +22,4 @@ fi
 
 ./install/fzf.sh
 
-./install/nvm.sh
-
 ./install/configure_git.sh

@@ -17,6 +17,6 @@ brew install \
   ripgrep \
   go \
   golangci-lint \
-  spaceship \
   neovim \
+  pure \
   tmux
