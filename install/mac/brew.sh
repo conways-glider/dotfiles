@@ -15,7 +15,6 @@ brew upgrade
 brew install \
   zsh \
   ripgrep \
-  go \
   golangci-lint \
   neovim \
   pure \

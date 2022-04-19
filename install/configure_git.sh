@@ -5,6 +5,9 @@ set -eou pipefail
 echo "Configuring git"
 
 # Configure git
+# Defaults
+git config --global init.defaultBranch 'main'
+
 # Aliases
 git config --global alias.co 'checkout'
 git config --global alias.cob 'checkout -b'
