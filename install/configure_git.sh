@@ -9,6 +9,8 @@ echo "Configuring git"
 git config --global init.defaultBranch 'main'
 
 # Aliases
+git config --global alias.s 'switch'
+git config --global alias.sc 'switch -c'
 git config --global alias.co 'checkout'
 git config --global alias.cob 'checkout -b'
 git config --global alias.p 'push'
