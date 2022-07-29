@@ -19,4 +19,5 @@ brew install \
   golangci-lint \
   neovim \
   pure \
+  spaceship \
   tmux

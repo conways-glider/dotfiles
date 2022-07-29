@@ -26,7 +26,8 @@ alias t="tmux"
 # pure prompt
 fpath+=$HOME/.zsh
 autoload -U promptinit; promptinit
-prompt pure
+# prompt pure
+prompt spaceship
 
 # editor setup
 export VISUAL=nvim
