@@ -60,6 +60,16 @@ setopt share_history
 # Autocomplete
 if [[ -x "$(command -v kubectl)" ]]; then
   source <(kubectl completion zsh)
+
+  # Quick access to kubernetes pods via bash
+  kbash() {
+    kubectl exec -it "$1" -- /bin/bash
+  }
+
+  # Quick access to kubernetes pods via sh
+  ksh() {
+    kubectl exec -it "$1" -- /bin/sh
+  }
 fi
 
 # nvm
