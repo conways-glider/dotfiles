@@ -24,11 +24,13 @@ alias k="kubectl"
 alias t="tmux"
 alias taps="cd \"$(brew --repository)/Library/Taps\""
 
+# spaceship prompt
+source $(brew --prefix)/opt/spaceship/spaceship.zsh
+
 # pure prompt
-fpath+=$HOME/.zsh
-autoload -U promptinit; promptinit
+# fpath+=("$(brew --prefix)/share/zsh/site-functions")
+# autoload -U promptinit; promptinit
 # prompt pure
-prompt spaceship
 
 # editor setup
 export VISUAL=nvim
