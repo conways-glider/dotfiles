@@ -17,6 +17,8 @@ brew install \
   ripgrep \
   go \
   golangci-lint \
+  kubectl \
+  kubectx \
   neovim \
   pure \
   spaceship \
