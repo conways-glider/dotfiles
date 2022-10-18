@@ -2,7 +2,7 @@
 
 set -eou pipefail
 
-./install/mac/brew.sh
+./install/brew.sh
 
 WHICH_ZSH=$(command -v zsh)
 
@@ -13,10 +13,12 @@ fi
 chsh -s "$WHICH_ZSH"
 
 if [[ ! -x "$(command -v kubectl)" ]]; then
-  ./install/ubuntu/kubernetes.sh
+  ./install/kubernetes.sh
 fi
 
 ./install/rust.sh
+
+./install/go.sh
 
 ./install/link.sh
 

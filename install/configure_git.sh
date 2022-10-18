@@ -7,6 +7,7 @@ echo "Configuring git"
 # Configure git
 # Defaults
 git config --global init.defaultBranch 'main'
+git config --global push.autoSetupRemote true
 
 # Aliases
 git config --global alias.s 'switch'
