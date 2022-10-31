@@ -19,6 +19,10 @@ chsh -s "$WHICH_ZSH"
 
 ./install/go.sh
 
+./install/base16.sh
+
+./install/tmux.sh
+
 ./install/link.sh
 
 ./install/fzf.sh

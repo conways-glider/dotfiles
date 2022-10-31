@@ -2,20 +2,10 @@
 
 set -eou pipefail
 
-# Install Base16 Shell
-echo "Installing Base16 Shell"
-rm -rf ~/.config/base16-shell
-git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-
 # Link zsh config
 echo "Linking zsh config"
 rm -f ~/.zshrc
 ln -sf "$(pwd)"/zsh/zshrc ~/.zshrc
-
-# Install tmux plugin manager
-echo "Installing tmux plugin manager"
-rm -rf ~/.tmux/plugins/tpm
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Link tmux config
 echo "Linking tmux config"
