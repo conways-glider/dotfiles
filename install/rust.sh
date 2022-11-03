@@ -11,5 +11,6 @@ fi
 
 # Install cargo tools
 echo "Installing cargo tools"
-cargo install --locked cargo-license
+cargo install cargo-audit
+cargo install cargo-license
 cargo install --locked cargo-deny
