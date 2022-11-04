@@ -27,4 +27,4 @@ chsh -s "$WHICH_ZSH"
 
 ./install/fzf.sh
 
-./install/configure_git.sh
+./install/git.sh
