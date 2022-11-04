@@ -23,6 +23,7 @@ alias vim="nvim"
 alias k="kubectl"
 alias t="tmux"
 alias taps="cd \"$(brew --repository)/Library/Taps\""
+alias rustcleanup="rustup toolchain list | grep -v stable | xargs -L1 rustup toolchain uninstall"
 
 # spaceship prompt
 source $(brew --prefix)/opt/spaceship/spaceship.zsh
