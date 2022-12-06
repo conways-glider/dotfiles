@@ -26,5 +26,4 @@ brew install \
   k9s \
   neovim \
   pure \
-  spaceship \
-  tmux
+  spaceship

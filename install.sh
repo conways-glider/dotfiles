@@ -21,8 +21,6 @@ chsh -s "$WHICH_ZSH"
 
 ./install/base16.sh
 
-./install/tmux.sh
-
 ./install/link.sh
 
 ./install/fzf.sh

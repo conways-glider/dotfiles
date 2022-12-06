@@ -7,11 +7,6 @@ echo "Linking zsh config"
 rm -f ~/.zshrc
 ln -sf "$(pwd)"/zsh/zshrc ~/.zshrc
 
-# Link tmux config
-echo "Linking tmux config"
-rm -f ~/.tmux.conf
-ln -sf "$(pwd)"/tmux/tmux.conf ~/.tmux.conf
-
 # Link neovim config
 echo "Linking neovim config"
 rm -rf ~/.config/nvim
