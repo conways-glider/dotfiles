@@ -23,6 +23,7 @@ brew install \
   golangci-lint \
   kubectl \
   kubectx \
+  k9s \
   neovim \
   pure \
   spaceship \
