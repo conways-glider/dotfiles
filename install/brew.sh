@@ -17,6 +17,7 @@ brew upgrade
 # Install packages
 echo "Installing brew packages"
 brew install \
+  fx \
   zsh \
   ripgrep \
   go \
