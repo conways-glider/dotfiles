@@ -2,7 +2,8 @@
 
 set -eou pipefail
 
-# Add Ubuntu Universe
+echo "Adding repositories"
+sudo add-apt-repository ppa:mozillacorp/mozillavpn
 # add-apt-repository universe
 
 # Update apt
@@ -24,7 +25,8 @@ sudo apt -y install \
   podman \
   gnome-tweaks \
   tmux \
-  transmission
+  transmission \
+  mozillavpn
 
 echo "Running snap installs"
 sudo snap install kubectl --classic
