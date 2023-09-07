@@ -2,7 +2,19 @@
 
 set -eou pipefail
 
-./install/brew.sh
+# OS Check
+export LOCAL_OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+
+if [[ "$LOCAL_OS" = "darwin" ]]; then
+    echo "Mac Install"
+    ./install/mac/brew.sh
+elif [[ "$LOCAL_OS" = "linux" ]]; then
+    echo "Linux Install (Ubuntu)"
+    ./install/ubuntu/install.sh
+    ./install/ubuntu/go.sh
+    ./install/ubuntu/kubernetes.sh
+    ./install/ubuntu/spaceship.sh
+fi
 
 WHICH_ZSH=$(command -v zsh)
 

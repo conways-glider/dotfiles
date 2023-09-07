@@ -17,14 +17,14 @@ brew upgrade
 # Install packages
 echo "Installing brew packages"
 brew install \
-  fx \
   zsh \
   ripgrep \
   go \
-  golangci-lint \
   kubectl \
   kubectx \
   k9s \
   neovim \
   pure \
-  spaceship
+  podman \
+  spaceship \
+  shellcheck

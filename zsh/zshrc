@@ -1,5 +1,8 @@
 # User configuration
 
+# OS Check
+export LOCAL_OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+
 # Base16 Shell
 BASE16_SHELL_PATH="$HOME/.config/base16-shell"
 [ -n "$PS1" ] && \
@@ -21,11 +24,21 @@ alias g="git"
 alias vi="nvim"
 alias vim="nvim"
 alias k="kubectl"
-alias taps="cd \"$(brew --repository)/Library/Taps\""
 alias rustcleanup="rustup toolchain list | grep -v stable | xargs -L1 rustup toolchain uninstall"
 
+if [[ "$LOCAL_OS" = "darwin" ]]; then
+    alias taps="cd \"$(brew --repository)/Library/Taps\""
+fi
+
+
 # spaceship prompt
-source $(brew --prefix)/opt/spaceship/spaceship.zsh
+
+if [[ "$LOCAL_OS" = "darwin" ]]; then
+    source $(brew --prefix)/opt/spaceship/spaceship.zsh
+elif [[ "$LOCAL_OS" = "linux" ]]; then
+    source "$HOME/.zsh/spaceship/spaceship.zsh"
+fi
+
 
 # pure prompt
 # fpath+=("$(brew --prefix)/share/zsh/site-functions")
