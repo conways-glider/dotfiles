@@ -22,7 +22,8 @@ sudo apt -y install \
   fonts-firacode \
   ripgrep \
   podman \
-  gnome-tweaks
+  gnome-tweaks \
+  tmux
 
 echo "Running snap installs"
 snap install kubectl --classic

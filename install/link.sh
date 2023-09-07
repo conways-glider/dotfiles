@@ -21,3 +21,8 @@ ln -sf "$(pwd)"/git/gitignore ~/.gitignore
 echo "Linking alacritty config"
 rm -f ~/.alacritty.toml
 ln -sf "$(pwd)"/alacritty/alacritty.toml ~/.alacritty.toml
+
+# Link tmux config
+echo "Linking tmux config"
+rm -f ~/.tmux.conf
+ln -sf "$(pwd)"/tmux/tmux.conf ~/.tmux.conf
