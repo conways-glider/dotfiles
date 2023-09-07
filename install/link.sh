@@ -16,3 +16,8 @@ ln -sf "$(pwd)"/neovim ~/.config/nvim
 echo "Linking gitignore"
 rm -f ~/.gitignore
 ln -sf "$(pwd)"/git/gitignore ~/.gitignore
+
+# Link alacritty config
+echo "Linking gitignore"
+rm -f ~/.alacritty.toml
+ln -sf "$(pwd)"/alacritty/alacritty.toml ~/.alacritty.toml
