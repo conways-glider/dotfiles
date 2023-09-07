@@ -26,6 +26,10 @@ sudo apt -y install \
   tmux
 
 echo "Running snap installs"
-snap install kubectl --classic
-snap install insomnia
-snap install --classic code
+sudo snap install kubectl --classic
+sudo snap install insomnia
+sudo snap install --classic code
+sudo snap install discord
+
+echo "Running post install tasks"
+sudo snap connect discord:system-observe
