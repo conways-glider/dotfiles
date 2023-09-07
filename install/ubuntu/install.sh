@@ -7,7 +7,7 @@ set -eou pipefail
 
 # Update apt
 echo "Running apt update & apt upgrade"
-sudo apt update && apt upgrade
+sudo apt update && sudo apt upgrade
 
 # Install items
 echo "Running apt installs"
