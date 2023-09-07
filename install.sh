@@ -3,7 +3,8 @@
 set -eou pipefail
 
 # OS Check
-export LOCAL_OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+LOCAL_OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+export LOCAL_OS
 
 if [[ "$LOCAL_OS" = "darwin" ]]; then
     echo "Mac Install"
