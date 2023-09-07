@@ -12,6 +12,7 @@ sudo apt update && sudo apt upgrade
 # Install items
 echo "Running apt installs"
 sudo apt -y install \
+  build-essential \
   shellcheck \
   curl \
   git-all \
