@@ -14,6 +14,7 @@ echo "Running apt installs"
 sudo apt -y install \
   build-essential \
   pkg-config \
+  libssl-dev \
   shellcheck \
   curl \
   git-all \
