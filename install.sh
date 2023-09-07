@@ -13,8 +13,9 @@ elif [[ "$LOCAL_OS" = "linux" ]]; then
     echo "Linux Install (Ubuntu)"
     ./install/ubuntu/install.sh
     ./install/ubuntu/go.sh
-    ./install/ubuntu/kubernetes.sh
     ./install/ubuntu/spaceship.sh
+    # ./install/ubuntu/docker.sh
+    # ./install/ubuntu/kubernetes.sh
 fi
 
 WHICH_ZSH=$(command -v zsh)
