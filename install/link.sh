@@ -18,6 +18,6 @@ rm -f ~/.gitignore
 ln -sf "$(pwd)"/git/gitignore ~/.gitignore
 
 # Link alacritty config
-echo "Linking gitignore"
+echo "Linking alacritty config"
 rm -f ~/.alacritty.toml
 ln -sf "$(pwd)"/alacritty/alacritty.toml ~/.alacritty.toml
