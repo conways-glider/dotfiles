@@ -27,4 +27,5 @@ brew install \
   pure \
   podman \
   spaceship \
-  shellcheck
+  shellcheck \
+  tmux
