@@ -20,7 +20,7 @@ clean_up () {
     echo "Cleaning up"
     echo "Removing alacritty repo"
     cd $RUNNING_LOCATION
-    rm -rf alacritty-repo
+    rm -rf ./alacritty-repo
 
     exit $ARG
 }
