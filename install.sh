@@ -15,7 +15,6 @@ elif [[ "$LOCAL_OS" = "linux" ]]; then
     ./install/ubuntu/go.sh
     ./install/ubuntu/spaceship.sh
     ./install/ubuntu/mullvad.sh
-    ./install/ubuntu/alacritty.sh
     ./install/ubuntu/microk8s.sh
     # ./install/ubuntu/docker.sh
     # ./install/ubuntu/kubernetes.sh
@@ -44,3 +43,8 @@ chsh -s "$WHICH_ZSH"
 ./install/fzf.sh
 
 ./install/git.sh
+
+if [[ "$LOCAL_OS" = "linux" ]]; then
+    echo "Alacritty Install"
+    ./install/ubuntu/alacritty.sh
+fi
