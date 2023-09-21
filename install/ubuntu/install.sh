@@ -34,7 +34,7 @@ sudo snap install --classic code
 sudo snap install discord
 sudo snap install vlc
 sudo snap install spotify
-sudo snap install microk8s
+sudo snap install microk8s --classic
 
 echo "Running post install tasks"
 sudo snap connect discord:system-observe
