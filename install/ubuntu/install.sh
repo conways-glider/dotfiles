@@ -25,8 +25,7 @@ sudo apt -y install \
   podman \
   gnome-tweaks \
   tmux \
-  transmission \
-  mozillavpn
+  transmission
 
 echo "Running snap installs"
 sudo snap install kubectl --classic
@@ -35,6 +34,7 @@ sudo snap install --classic code
 sudo snap install discord
 sudo snap install vlc
 sudo snap install spotify
+sudo snap install microk8s
 
 echo "Running post install tasks"
 sudo snap connect discord:system-observe
