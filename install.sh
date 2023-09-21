@@ -16,6 +16,7 @@ elif [[ "$LOCAL_OS" = "linux" ]]; then
     ./install/ubuntu/spaceship.sh
     ./install/ubuntu/mullvad.sh
     ./install/ubuntu/alacritty.sh
+    ./install/ubuntu/microk8s.sh
     # ./install/ubuntu/docker.sh
     # ./install/ubuntu/kubernetes.sh
     # ./install/ubuntu/flatpak.sh
