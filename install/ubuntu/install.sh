@@ -25,7 +25,8 @@ sudo apt -y install \
   podman \
   gnome-tweaks \
   tmux \
-  transmission
+  transmission \
+  openssh-server
 
 echo "Running snap installs"
 sudo snap install kubectl --classic
