@@ -3,7 +3,6 @@
 set -eou pipefail
 
 echo "Adding repositories"
-sudo add-apt-repository ppa:mozillacorp/mozillavpn
 # add-apt-repository universe
 
 # Update apt
