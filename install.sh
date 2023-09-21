@@ -2,6 +2,8 @@
 
 set -eou pipefail
 
+./install/link.sh
+
 # OS Check
 LOCAL_OS=$(uname -s | tr '[:upper:]' '[:lower:]')
 export LOCAL_OS
@@ -37,8 +39,6 @@ chsh -s "$WHICH_ZSH"
 ./install/go.sh
 
 ./install/base16.sh
-
-./install/link.sh
 
 ./install/fzf.sh
 
