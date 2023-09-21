@@ -12,4 +12,4 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf ${BUNDLE_FILENAME}
 
 # Clean up go
 rm -rf ${BUNDLE_FILENAME}
-rm -rf ~/go
+sudo rm -rf ~/go
