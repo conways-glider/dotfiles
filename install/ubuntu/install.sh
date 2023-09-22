@@ -4,6 +4,7 @@ set -eou pipefail
 
 echo "Adding repositories"
 # add-apt-repository universe
+sudo add-apt-repository ppa:git-core/ppa -y
 
 # Update apt
 echo "Running apt update & apt upgrade"
@@ -17,7 +18,6 @@ sudo apt -y install \
   libssl-dev \
   shellcheck \
   curl \
-  git-all \
   zsh \
   fonts-firacode \
   ripgrep \
@@ -25,7 +25,8 @@ sudo apt -y install \
   gnome-tweaks \
   tmux \
   transmission \
-  openssh-server
+  openssh-server \
+  git
 
 echo "Running snap installs"
 sudo snap install kubectl --classic
