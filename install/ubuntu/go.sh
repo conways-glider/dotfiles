@@ -13,7 +13,3 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf ${BUNDLE_FILENAME}
 # Clean up go
 rm -rf ${BUNDLE_FILENAME}
 sudo rm -rf ~/go
-
-echo "Install golangci-lint"
-# binary will be $(go env GOPATH)/bin/golangci-lint
-curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.54.2
