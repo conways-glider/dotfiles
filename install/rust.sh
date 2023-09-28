@@ -9,6 +9,9 @@ if [[ ! -x "$(command -v rustup)" ]]; then
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 fi
 
+echo "Setting up rust env"
+source "$HOME/.cargo/env"
+
 # Install cargo tools
 echo "Installing cargo tools"
 cargo install cargo-audit
