@@ -7,6 +7,9 @@ echo "Linking zsh config"
 rm -f ~/.zshrc
 ln -sf "$(pwd)"/zsh/zshrc ~/.zshrc
 
+echo "Making .config folder"
+mkdir -p ~/.config
+
 # Link neovim config
 echo "Linking neovim config"
 rm -rf ~/.config/nvim
