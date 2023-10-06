@@ -89,6 +89,7 @@ if [[ -x "$(command -v kubectl)" ]]; then
 fi
 
 if [[ -x "$(command -v k3s)" ]]; then
+  export KUBECONFIG=~/.kube/config
   source <(k3s completion zsh)
 fi
 
