@@ -10,12 +10,9 @@ export LOCAL_OS
 
 if [[ "$LOCAL_OS" = "darwin" ]]; then
     echo "Mac Install"
-    ./install/mac/brew.sh
 elif [[ "$LOCAL_OS" = "linux" ]]; then
     echo "Linux Install (Ubuntu)"
     ./install/ubuntu/apt.sh
-    ./install/ubuntu/snap.sh
-    ./install/ubuntu/go.sh
     ./install/ubuntu/spaceship.sh
 fi
 
@@ -30,17 +27,6 @@ fi
 echo "Setting zsh as default shell"
 chsh -s "$WHICH_ZSH"
 
-./install/rust.sh
-
-./install/go.sh
-
-./install/base16.sh
-
 ./install/fzf.sh
 
 ./install/git.sh
-
-if [[ "$LOCAL_OS" = "linux" ]]; then
-    echo "Alacritty Install"
-    ./install/ubuntu/alacritty.sh
-fi
