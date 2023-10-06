@@ -19,6 +19,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 test -e "/usr/local/go/bin" && export PATH=$PATH:/usr/local/go/bin
 test -e "${HOME}/go/bin" && export PATH=$PATH:$HOME/go/bin
 
+# Home Local Path
+test -e "/${HOME}/.local/bin && export PATH=$PATH:$HOME/.local/bin
+
 # aliases
 alias g="git"
 alias vi="nvim"
