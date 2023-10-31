@@ -11,3 +11,5 @@ set -eou pipefail
 ./install/git.sh
 
 ./install/server/unprivileged_ports.sh
+
+./install/ubuntu/docker.sh
