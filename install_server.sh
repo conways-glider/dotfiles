@@ -8,6 +8,8 @@ set -eou pipefail
 
 ./install/ubuntu/spaceship.sh
 
+WHICH_ZSH=$(command -v zsh)
+
 echo "Checking if zsh is in /etc/shells"
 if ! grep -q "$WHICH_ZSH" /etc/shells; then
   echo "Adding zsh to /etc/shells"
