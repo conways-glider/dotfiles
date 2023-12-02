@@ -24,6 +24,7 @@ brew install \
   kubectx \
   k9s \
   vim \
+  helix \
   pure \
   podman \
   spaceship \
