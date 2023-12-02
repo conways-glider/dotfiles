@@ -23,7 +23,7 @@ brew install \
   kubectl \
   kubectx \
   k9s \
-  neovim \
+  vim \
   pure \
   podman \
   spaceship \
