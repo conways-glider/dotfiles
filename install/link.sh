@@ -11,9 +11,14 @@ echo "Making .config folder"
 mkdir -p ~/.config
 
 # Link neovim config
-echo "Linking neovim config"
-rm -rf ~/.config/nvim
-ln -sf "$(pwd)"/neovim ~/.config/nvim
+# echo "Linking neovim config"
+# rm -rf ~/.config/nvim
+# ln -sf "$(pwd)"/neovim ~/.config/nvim
+
+# Link vim config
+echo "Linking vim config"
+rm -rf ~/.vimrc
+ln -sf "$(pwd)"/vim/vimrc ~/.vimrc
 
 # Link gitignore
 echo "Linking gitignore"

@@ -40,6 +40,8 @@ chsh -s "$WHICH_ZSH"
 
 ./install/git.sh
 
+./install/vim.sh
+
 if [[ "$LOCAL_OS" = "linux" ]]; then
     echo "Alacritty Install"
     ./install/ubuntu/alacritty.sh
