@@ -15,6 +15,11 @@ mkdir -p ~/.config
 # rm -rf ~/.config/nvim
 # ln -sf "$(pwd)"/neovim ~/.config/nvim
 
+# Link helix config
+echo "Linking helix config"
+rm -rf ~/.config/helix
+ln -sf "$(pwd)"/helix ~/.config/helix
+
 # Link vim config
 echo "Linking vim config"
 rm -rf ~/.vimrc
@@ -27,8 +32,6 @@ ln -sf "$(pwd)"/git/gitignore ~/.gitignore
 
 # Link alacritty config
 echo "Linking alacritty config"
-# rm -f ~/.alacritty.toml
-# ln -sf "$(pwd)"/alacritty/alacritty.toml ~/.alacritty.toml
 rm -f ~/.alacritty.yml
 ln -sf "$(pwd)"/alacritty/alacritty.yml ~/.alacritty.yml
 

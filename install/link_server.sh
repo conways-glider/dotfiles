@@ -10,10 +10,15 @@ ln -sf "$(pwd)"/zsh/zshrc ~/.zshrc
 echo "Making .config folder"
 mkdir -p ~/.config
 
-# Link neovim config
-echo "Linking neovim config"
-rm -rf ~/.config/nvim
-ln -sf "$(pwd)"/neovim ~/.config/nvim
+# Link helix config
+echo "Linking helix config"
+rm -rf ~/.config/helix
+ln -sf "$(pwd)"/helix ~/.config/helix
+
+# Link vim config
+echo "Linking vim config"
+rm -rf ~/.vimrc
+ln -sf "$(pwd)"/vim/vimrc ~/.vimrc
 
 # Link gitignore
 echo "Linking gitignore"
