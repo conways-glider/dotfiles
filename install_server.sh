@@ -19,6 +19,8 @@ fi
 echo "Setting zsh as default shell"
 chsh -s "$WHICH_ZSH"
 
+./install/tmux.sh
+
 ./install/git.sh
 
 ./install/server/unprivileged_ports.sh

@@ -38,6 +38,8 @@ chsh -s "$WHICH_ZSH"
 
 ./install/fzf.sh
 
+./install/tmux.sh
+
 ./install/git.sh
 
 ./install/vim.sh
