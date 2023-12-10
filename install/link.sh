@@ -27,8 +27,10 @@ ln -sf "$(pwd)"/git/gitignore ~/.gitignore
 
 # Link alacritty config
 echo "Linking alacritty config"
-rm -f ~/.alacritty.toml
-ln -sf "$(pwd)"/alacritty/alacritty.toml ~/.alacritty.toml
+# rm -f ~/.alacritty.toml
+# ln -sf "$(pwd)"/alacritty/alacritty.toml ~/.alacritty.toml
+rm -f ~/.alacritty.yml
+ln -sf "$(pwd)"/alacritty/alacritty.yml ~/.alacritty.yml
 
 # Link tmux config
 echo "Linking tmux config"
