@@ -29,4 +29,6 @@ brew install \
   podman \
   spaceship \
   shellcheck \
-  tmux
+  tmux \
+  gallery-dl \
+  yt-dlp
