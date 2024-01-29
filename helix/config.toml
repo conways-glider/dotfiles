@@ -1,3 +1,6 @@
+[editor]
+true-color = true
+
 [keys.normal]
 F1 = ":set whitespace.render none"
 F2 = ":set whitespace.render all"
