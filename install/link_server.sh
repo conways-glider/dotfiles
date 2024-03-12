@@ -15,10 +15,11 @@ echo "Linking helix config"
 rm -rf ~/.config/helix
 ln -sf "$(pwd)"/helix ~/.config/helix
 
-# Link vim config
-echo "Linking vim config"
-rm -rf ~/.vimrc
-ln -sf "$(pwd)"/vim/vimrc ~/.vimrc
+# Link neovim config
+echo "Linking neovim config"
+rm -rf ~/.config/nvim
+mkdir -p ~/.config/nvim
+ln -sf "$(pwd)"/neovim/init.lua ~/.config/nvim/init.lua
 
 # Link gitignore
 echo "Linking gitignore"

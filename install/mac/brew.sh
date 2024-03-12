@@ -24,7 +24,7 @@ brew install \
   kubectl \
   kubectx \
   k9s \
-  vim \
+  neovim \
   helix \
   pure \
   podman \

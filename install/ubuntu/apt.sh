@@ -28,4 +28,5 @@ sudo apt -y install \
   transmission \
   openssh-server \
   git \
-  helix
+  helix \
+  neovim

@@ -24,6 +24,9 @@ alias p="podman"
 alias z="zellij"
 alias rustcleanup="rustup toolchain list | grep -v stable | xargs -L1 rustup toolchain uninstall"
 
+alias vi="nvim"
+alias vim="nvim"
+
 if [[ "$LOCAL_OS" = "darwin" ]]; then
     alias taps="cd \"$(brew --repository)/Library/Taps\""
 fi

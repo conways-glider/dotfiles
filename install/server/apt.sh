@@ -23,4 +23,5 @@ sudo apt -y install \
   tmux \
   openssh-server \
   git \
-  helix
+  helix \
+  neovim
