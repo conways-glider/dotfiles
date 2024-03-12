@@ -19,3 +19,4 @@ cargo install --locked cargo-deny
 cargo install cargo-license
 cargo install cargo-msrv
 cargo install cargo-vet
+cargo install --locked zellij

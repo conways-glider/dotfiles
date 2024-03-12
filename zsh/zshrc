@@ -21,6 +21,7 @@ alias g="git"
 alias d="docker"
 alias k="kubectl"
 alias p="podman"
+alias z="zellij"
 alias rustcleanup="rustup toolchain list | grep -v stable | xargs -L1 rustup toolchain uninstall"
 
 if [[ "$LOCAL_OS" = "darwin" ]]; then

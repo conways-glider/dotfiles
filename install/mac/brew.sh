@@ -18,6 +18,7 @@ brew upgrade
 echo "Installing brew packages"
 brew install \
   zsh \
+  bat \
   ripgrep \
   go \
   kubectl \

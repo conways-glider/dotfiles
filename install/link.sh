@@ -15,6 +15,11 @@ mkdir -p ~/.config
 # rm -rf ~/.config/nvim
 # ln -sf "$(pwd)"/neovim ~/.config/nvim
 
+# Link zellij config
+echo "Linking zellij config"
+rm -rf ~/.config/zellij
+ln -sf "$(pwd)"/zellij ~/.config/zellij
+
 # Link helix config
 echo "Linking helix config"
 rm -rf ~/.config/helix
