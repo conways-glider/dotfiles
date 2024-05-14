@@ -20,4 +20,5 @@ sudo apt -y install \
   tmux \
   openssh-server \
   git-all \
-  vlc
+  vlc \
+  wireguard
