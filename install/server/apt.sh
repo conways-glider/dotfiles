@@ -4,8 +4,6 @@ set -eou pipefail
 
 echo "Adding repositories"
 # add-apt-repository universe
-sudo add-apt-repository ppa:git-core/ppa -y
-sudo add-apt-repository ppa:maveonair/helix-editor
 
 # Update apt
 echo "Running apt update & apt upgrade"
@@ -22,6 +20,5 @@ sudo apt -y install \
   ripgrep \
   tmux \
   openssh-server \
-  git \
-  helix \
+  git-all \
   neovim

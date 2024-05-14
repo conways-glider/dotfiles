@@ -16,6 +16,9 @@ test -e "${HOME}/go/bin" && export PATH=$PATH:$HOME/go/bin
 # Home Local Path
 test -e "/${HOME}/.local/bin" && export PATH=$PATH:$HOME/.local/bin
 
+# Neovim Path
+test -e "/opt/nvim-linux64/bin" && export PATH=/opt/nvim-linux64/bin:$PATH
+
 # aliases
 alias g="git"
 alias d="docker"

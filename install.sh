@@ -12,11 +12,11 @@ if [[ "$LOCAL_OS" = "darwin" ]]; then
     echo "Mac Install"
     ./install/mac/brew.sh
 elif [[ "$LOCAL_OS" = "linux" ]]; then
-    echo "Linux Install (Ubuntu)"
-    ./install/ubuntu/apt.sh
-    ./install/ubuntu/snap.sh
-    ./install/ubuntu/go.sh
-    ./install/ubuntu/spaceship.sh
+    echo "Linux Install (Debian)"
+    ./install/debian/apt.sh
+    ./install/debian/nvim.sh
+    ./install/debian/spaceship.sh
+    ./install/debian/go.sh
 fi
 
 WHICH_ZSH=$(command -v zsh)
@@ -41,8 +41,3 @@ chsh -s "$WHICH_ZSH"
 ./install/tmux.sh
 
 ./install/git.sh
-
-if [[ "$LOCAL_OS" = "linux" ]]; then
-    echo "Alacritty Install"
-    ./install/ubuntu/alacritty.sh
-fi

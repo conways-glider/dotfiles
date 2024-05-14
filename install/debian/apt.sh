@@ -2,16 +2,11 @@
 
 set -eou pipefail
 
-echo "Adding repositories"
-# add-apt-repository universe
-sudo add-apt-repository ppa:git-core/ppa -y
-sudo add-apt-repository ppa:maveonair/helix-editor
+# echo "Adding repositories"
 
-# Update apt
 echo "Running apt update & apt upgrade"
 sudo apt update && sudo apt upgrade
 
-# Install items
 echo "Running apt installs"
 sudo apt -y install \
   build-essential \
@@ -22,11 +17,7 @@ sudo apt -y install \
   zsh \
   fonts-firacode \
   ripgrep \
-  podman \
-  gnome-tweaks \
   tmux \
-  transmission \
   openssh-server \
-  git \
-  helix \
-  neovim
+  git-all \
+  vlc
