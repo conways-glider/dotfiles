@@ -34,8 +34,6 @@ chsh -s "$WHICH_ZSH"
 
 ./install/go.sh
 
-./install/base16.sh
-
 ./install/fzf.sh
 
 ./install/tmux.sh

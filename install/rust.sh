@@ -20,3 +20,4 @@ cargo install cargo-license
 cargo install cargo-msrv
 cargo install cargo-vet
 cargo install --locked zellij
+cargo install tinty
