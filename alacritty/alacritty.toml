@@ -16,3 +16,7 @@ style = "Italic"
 [font.bold_italic]
 family = "Fira Code"
 style = "Bold Italic"
+
+[keyboard]
+bindings = [{ key = "F11", action = "ToggleFullscreen" }]
+
