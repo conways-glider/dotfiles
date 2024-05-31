@@ -6,7 +6,7 @@ set -eou pipefail
 
 ./install/server/apt.sh
 
-./install/ubuntu/spaceship.sh
+./install/debian/spaceship.sh
 
 WHICH_ZSH=$(command -v zsh)
 
@@ -25,4 +25,4 @@ chsh -s "$WHICH_ZSH"
 
 ./install/server/unprivileged_ports.sh
 
-./install/ubuntu/docker.sh
+./install/debian/docker.sh
