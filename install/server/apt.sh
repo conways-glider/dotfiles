@@ -20,5 +20,4 @@ sudo apt -y install \
   ripgrep \
   tmux \
   openssh-server \
-  git-all \
-  neovim
+  git-all

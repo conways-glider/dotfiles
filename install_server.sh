@@ -23,6 +23,6 @@ chsh -s "$WHICH_ZSH"
 
 ./install/git.sh
 
-./install/server/unprivileged_ports.sh
+# ./install/server/unprivileged_ports.sh
 
 ./install/debian/docker.sh
