@@ -34,7 +34,13 @@ ln -sf "$(pwd)"/git/gitignore ~/.gitignore
 # Link alacritty config
 echo "Linking alacritty config"
 rm -f ~/.alacritty.toml
-ln -sf "$(pwd)"/alacritty/alacritty.toml ~/.alacritty.toml
+if [[ "$LOCAL_OS" = "darwin" ]]; then
+    echo "Mac Install"
+    ln -sf "$(pwd)"/alacritty/mac_alacritty.toml ~/.alacritty.toml
+elif [[ "$LOCAL_OS" = "linux" ]]; then
+    echo "Linux Install (Debian)"
+    ln -sf "$(pwd)"/alacritty/debian_alacritty.toml ~/.alacritty.toml
+fi
 
 # Link tmux config
 echo "Linking tmux config"
