@@ -16,6 +16,7 @@ source "$HOME/.cargo/env"
 echo "Installing cargo tools"
 cargo install cargo-audit
 cargo install --locked cargo-deny
+cargo install --locked cargo-about
 cargo install cargo-license
 cargo install cargo-msrv
 cargo install cargo-vet
