@@ -19,3 +19,6 @@ style = "Bold Italic"
 
 [keyboard]
 # bindings = [{ key = "F11", action = "ToggleFullscreen" }]
+
+[window]
+option_as_alt = "Both"
