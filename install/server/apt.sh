@@ -20,4 +20,5 @@ sudo apt -y install \
   ripgrep \
   tmux \
   openssh-server \
-  git-all
+  git-all \
+  nfs-common
