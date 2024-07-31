@@ -26,3 +26,5 @@ chsh -s "$WHICH_ZSH"
 # ./install/server/unprivileged_ports.sh
 
 ./install/debian/docker.sh
+
+./install/debian/1password-cli.sh
