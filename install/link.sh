@@ -12,13 +12,15 @@ mkdir -p ~/.config
 
 # Link zellij config
 echo "Linking zellij config"
-rm -rf ~/.config/zellij
-ln -sf "$(pwd)"/zellij ~/.config/zellij
+mkdir -p ~/.config/zellij
+rm -rf ~/.config/zellij/config.kdl
+ln -sf "$(pwd)"/zellij/config.kdl ~/.config/zellij/config.kdl
 
 # Link helix config
 echo "Linking helix config"
-rm -rf ~/.config/helix
-ln -sf "$(pwd)"/helix ~/.config/helix
+mkdir -p ~/.config/helix
+rm -rf ~/.config/helix/config.toml
+ln -sf "$(pwd)"/helix/config.toml ~/.config/helix/config.toml
 
 # Link neovim config
 echo "Linking neovim config"

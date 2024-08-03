@@ -12,8 +12,9 @@ mkdir -p ~/.config
 
 # Link helix config
 echo "Linking helix config"
-rm -rf ~/.config/helix
-ln -sf "$(pwd)"/helix ~/.config/helix
+mkdir -p ~/.config/helix
+rm -rf ~/.config/helix/config.toml
+ln -sf "$(pwd)"/helix/config.toml ~/.config/helix/config.toml
 
 # Link neovim config
 echo "Linking neovim config"
