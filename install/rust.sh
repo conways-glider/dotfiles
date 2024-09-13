@@ -22,3 +22,5 @@ cargo install cargo-msrv
 cargo install cargo-vet
 cargo install --locked zellij
 cargo install tinty
+cargo install cargo-tarpaulin
+cargo install --locked cargo-mutants
