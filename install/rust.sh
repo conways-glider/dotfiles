@@ -24,3 +24,4 @@ cargo install --locked zellij
 cargo install tinty
 cargo install cargo-tarpaulin
 cargo install --locked cargo-mutants
+cargo install --locked bacon
