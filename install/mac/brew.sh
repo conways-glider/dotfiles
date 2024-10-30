@@ -17,19 +17,20 @@ brew upgrade
 # Install packages
 echo "Installing brew packages"
 brew install \
-  zsh \
   bat \
-  ripgrep \
+  elixir \
+  gallery-dl \
   go \
+  helix \
+  k9s \
   kubectl \
   kubectx \
-  k9s \
   neovim \
-  helix \
-  pure \
   podman \
-  spaceship \
+  pure \
+  ripgrep \
   shellcheck \
+  spaceship \
   tmux \
-  gallery-dl \
-  yt-dlp
+  yt-dlp \
+  zsh
