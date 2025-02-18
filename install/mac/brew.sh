@@ -26,6 +26,7 @@ brew install \
   kubectl \
   kubectx \
   neovim \
+  nushell \
   podman \
   pure \
   ripgrep \
