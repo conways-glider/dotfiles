@@ -2,7 +2,7 @@
 
 set -eou pipefail
 
-./install/link.sh
+./scripts/link.sh
 
 # OS Check
 LOCAL_OS=$(uname -s | tr '[:upper:]' '[:lower:]')
@@ -10,13 +10,13 @@ export LOCAL_OS
 
 if [[ "$LOCAL_OS" = "darwin" ]]; then
     echo "Mac Install"
-    ./install/mac/brew.sh
+    ./scripts/mac/brew.sh
 elif [[ "$LOCAL_OS" = "linux" ]]; then
     echo "Linux Install (Debian)"
-    ./install/debian/apt.sh
-    ./install/debian/nvim.sh
-    ./install/debian/spaceship.sh
-    ./install/debian/go.sh
+    ./scripts/debian/apt.sh
+    ./scripts/debian/nvim.sh
+    ./scripts/debian/spaceship.sh
+    ./scripts/debian/go.sh
 fi
 
 WHICH_ZSH=$(command -v zsh)
@@ -30,12 +30,12 @@ fi
 echo "Setting zsh as default shell"
 chsh -s "$WHICH_ZSH"
 
-./install/rust.sh
+./scripts/rust.sh
 
-./install/go.sh
+./scripts/go.sh
 
-./install/fzf.sh
+./scripts/fzf.sh
 
-./install/tmux.sh
+./scripts/tmux.sh
 
-./install/git.sh
+./scripts/git.sh

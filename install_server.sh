@@ -2,11 +2,11 @@
 
 set -eou pipefail
 
-./install/link_server.sh
+./scripts/link_server.sh
 
-./install/server/apt.sh
+./scripts/server/apt.sh
 
-./install/debian/spaceship.sh
+./scripts/debian/spaceship.sh
 
 WHICH_ZSH=$(command -v zsh)
 
@@ -19,12 +19,12 @@ fi
 echo "Setting zsh as default shell"
 chsh -s "$WHICH_ZSH"
 
-./install/tmux.sh
+./scripts/tmux.sh
 
-./install/git.sh
+./scripts/git.sh
 
-# ./install/server/unprivileged_ports.sh
+# ./scripts/server/unprivileged_ports.sh
 
-./install/debian/docker.sh
+./scripts/debian/docker.sh
 
-./install/debian/1password-cli.sh
+./scripts/debian/1password-cli.sh
