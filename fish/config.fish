@@ -7,4 +7,8 @@ if status is-interactive
     abbr -a -g z zellij
     abbr -a -g vi nvim
     abbr -a -g vim nvim
+
+    if type -q tinty
+        tinty init
+    end
 end
