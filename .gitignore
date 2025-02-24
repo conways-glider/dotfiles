@@ -3,3 +3,4 @@ pure/
 .netrwhist
 alacritty-repo
 helix/runtime
+fish/fish_variables
