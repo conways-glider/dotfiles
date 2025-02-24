@@ -19,16 +19,22 @@ elif [[ "$LOCAL_OS" = "linux" ]]; then
     ./scripts/debian/go.sh
 fi
 
-WHICH_ZSH=$(command -v zsh)
-
 echo "Checking if zsh is in /etc/shells"
+WHICH_ZSH=$(command -v zsh)
 if ! grep -q "$WHICH_ZSH" /etc/shells; then
   echo "Adding zsh to /etc/shells"
   echo "$WHICH_ZSH" | sudo tee -a /etc/shells
 fi
 
-echo "Setting zsh as default shell"
-chsh -s "$WHICH_ZSH"
+echo "Checking if fish is in /etc/shells"
+WHICH_FISH=$(command -v fish)
+if ! grep -q "$WHICH_FISH" /etc/shells; then
+  echo "Adding fish to /etc/shells"
+  echo "$WHICH_FISH" | sudo tee -a /etc/shells
+fi
+
+echo "Setting fish as default shell"
+chsh -s "$WHICH_FISH"
 
 ./scripts/rust.sh
 
