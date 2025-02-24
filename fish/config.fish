@@ -5,8 +5,15 @@ if status is-interactive
     abbr -a -g k kubectl
     abbr -a -g p podman
     abbr -a -g z zellij
-    abbr -a -g vi nvim
-    abbr -a -g vim nvim
+
+    if type -q nvim
+        abbr -a -g vi nvim
+        abbr -a -g vim nvim
+    end
+
+    if type -q eza
+        abbr -a -g ls eza
+    end
 
     if type -q tinty
         tinty init

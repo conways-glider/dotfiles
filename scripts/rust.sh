@@ -22,7 +22,10 @@ cargo install --locked cargo-mutants
 cargo install cargo-tarpaulin
 cargo install cargo-vet
 
-echo "Installing other rust tools"
+echo "Installing other rust-based tools"
 cargo install --locked bacon
 cargo install tinty
 cargo install --locked zellij
+cargo install eza
+cargo install fd-find
+# TODO: Maybe install ripgrep here?
