@@ -11,6 +11,10 @@ if status is-interactive
         abbr -a -g vim nvim
     end
 
+    if type -q bat
+        abbr -a -g cat bat
+    end
+
     if type -q eza
         abbr -a -g ls eza
     end
