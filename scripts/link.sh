@@ -2,6 +2,8 @@
 
 set -eou pipefail
 
+LOCAL_OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+
 # Link zsh config
 echo "Linking zsh config"
 rm -f ~/.zshrc

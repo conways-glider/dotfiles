@@ -19,6 +19,7 @@ echo "Installing brew packages"
 brew install \
   bat \
   elixir \
+  fish \
   gallery-dl \
   go \
   helix \
