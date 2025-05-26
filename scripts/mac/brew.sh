@@ -22,6 +22,7 @@ brew install \
   fish \
   gallery-dl \
   go \
+  golangci-lint \
   helix \
   k9s \
   kubectl \
