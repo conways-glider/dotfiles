@@ -1,6 +1,9 @@
 # [font]
 # size = 14
 
+[keyboard]
+bindings = [{ key = "F11", action = "ToggleFullscreen" }]
+
 [font.normal]
 family = "Fira Code"
 style = "Regular"
@@ -16,6 +19,3 @@ style = "Italic"
 [font.bold_italic]
 family = "Fira Code"
 style = "Bold Italic"
-
-[keyboard]
-bindings = [{ key = "F11", action = "ToggleFullscreen" }]

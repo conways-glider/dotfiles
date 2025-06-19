@@ -1,5 +1,14 @@
+[terminal]
+# shell = { program = "/opt/homebrew/bin/fish", args = ["-c", "zellij"] }
+
 # [font]
 # size = 14
+
+[keyboard]
+# bindings = [{ key = "F11", action = "ToggleFullscreen" }]
+
+[window]
+option_as_alt = "Both"
 
 [font.normal]
 family = "FiraCode Nerd Font"
@@ -16,9 +25,3 @@ style = "Italic"
 [font.bold_italic]
 family = "FiraCode Nerd Font"
 style = "Bold Italic"
-
-[keyboard]
-# bindings = [{ key = "F11", action = "ToggleFullscreen" }]
-
-[window]
-option_as_alt = "Both"
