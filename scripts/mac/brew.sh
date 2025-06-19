@@ -37,3 +37,5 @@ brew install \
   tmux \
   yt-dlp \
   zsh
+
+brew install --cask goreleaser/tap/goreleaser
