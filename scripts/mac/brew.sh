@@ -39,3 +39,7 @@ brew install \
   zsh
 
 brew install --cask goreleaser/tap/goreleaser
+
+# echo "Setting up lldb-dap"
+# brew install llvm
+# ln -s $(brew --prefix)/opt/llvm/bin/lldb-dap $(brew --prefix)/bin/
