@@ -36,6 +36,7 @@ brew install \
   spaceship \
   tmux \
   yt-dlp \
+  zig \
   zsh
 
 brew install --cask goreleaser/tap/goreleaser
