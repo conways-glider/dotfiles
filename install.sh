@@ -40,6 +40,8 @@ chsh -s "$WHICH_FISH"
 
 ./scripts/go.sh
 
+./scripts/python.sh
+
 ./scripts/fzf.sh
 
 ./scripts/tmux.sh
