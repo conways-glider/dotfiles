@@ -1,3 +1,5 @@
+theme = "dracula"
+
 [editor]
 true-color = true
 

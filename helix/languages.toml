@@ -1,4 +1,9 @@
 [[language]]
 name = "rust"
 formatter = { command = "rustfmt" }
-auto-format = true
+auto-format = false
+
+[[language]]
+name = "go"
+formatter = { command = "golangci-lint", args = ["fmt"] }
+auto-format = false
