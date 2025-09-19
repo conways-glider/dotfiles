@@ -6,7 +6,7 @@ set -eou pipefail
 echo "Installing go"
 
 GO_VERSION_TAG=$(curl "https://go.dev/VERSION?m=text" | head -1)
-ARCH=$(dpkg-architecture --list)
+ARCH=$(dpkg --print-architecture)
 BUNDLE_FILENAME="${GO_VERSION_TAG}.linux-${ARCH}.tar.gz"
 wget "https://dl.google.com/go/${BUNDLE_FILENAME}"
 clean_up () {
