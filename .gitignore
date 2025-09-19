@@ -4,3 +4,4 @@ pure/
 alacritty-repo
 helix/runtime
 fish/fish_variables
+fish/completions

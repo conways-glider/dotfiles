@@ -27,12 +27,6 @@ echo "Linking helix config"
 rm -rf ~/.config/helix
 ln -sf "$(pwd)"/helix ~/.config/helix
 
-# Link neovim config
-echo "Linking neovim config"
-rm -rf ~/.config/nvim
-mkdir -p ~/.config/nvim
-ln -sf "$(pwd)"/neovim/init.lua ~/.config/nvim/init.lua
-
 # Link gitignore
 echo "Linking gitignore"
 rm -f ~/.gitignore
@@ -45,11 +39,6 @@ if [[ "$LOCAL_OS" = "darwin" ]]; then
     echo "Mac Install"
     ln -sf "$(pwd)"/alacritty/mac_alacritty.toml ~/.alacritty.toml
 elif [[ "$LOCAL_OS" = "linux" ]]; then
-    echo "Linux Install (Debian)"
-    ln -sf "$(pwd)"/alacritty/debian_alacritty.toml ~/.alacritty.toml
+    echo "Linux Install"
+    ln -sf "$(pwd)"/alacritty/linux_alacritty.toml ~/.alacritty.toml
 fi
-
-# Link tmux config
-echo "Linking tmux config"
-rm -f ~/.tmux.conf
-ln -sf "$(pwd)"/tmux/tmux.conf ~/.tmux.conf

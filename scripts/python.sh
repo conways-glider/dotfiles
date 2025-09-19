@@ -11,3 +11,6 @@ fi
 
 # Install ruff
 uv tool install ruff@latest
+
+# Set up uv shell completions for fish
+echo 'uv generate-shell-completion fish | source' > ~/.config/fish/completions/uv.fish

@@ -6,8 +6,6 @@ set -eou pipefail
 
 ./scripts/server/apt.sh
 
-./scripts/debian/spaceship.sh
-
 WHICH_ZSH=$(command -v zsh)
 
 echo "Checking if zsh is in /etc/shells"
@@ -18,8 +16,6 @@ fi
 
 echo "Setting zsh as default shell"
 chsh -s "$WHICH_ZSH"
-
-./scripts/tmux.sh
 
 ./scripts/git.sh
 

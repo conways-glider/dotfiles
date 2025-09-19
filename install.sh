@@ -12,10 +12,8 @@ if [[ "$LOCAL_OS" = "darwin" ]]; then
     echo "Mac Install"
     ./scripts/mac/brew.sh
 elif [[ "$LOCAL_OS" = "linux" ]]; then
-    echo "Linux Install (Debian)"
+    echo "Linux Install"
     ./scripts/debian/apt.sh
-    ./scripts/debian/nvim.sh
-    ./scripts/debian/spaceship.sh
     ./scripts/debian/go.sh
 fi
 
@@ -43,7 +41,5 @@ chsh -s "$WHICH_FISH"
 ./scripts/python.sh
 
 ./scripts/fzf.sh
-
-./scripts/tmux.sh
 
 ./scripts/git.sh

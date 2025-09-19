@@ -9,6 +9,7 @@ sudo apt update && sudo apt upgrade
 
 echo "Running apt installs"
 sudo apt -y install \
+  bat \
   build-essential \
   pkg-config \
   libssl-dev \
