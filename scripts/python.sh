@@ -16,4 +16,4 @@ if [[ -x "$(command -v uv)" ]]; then
 fi
 
 # Set up uv shell completions for fish
-echo 'uv generate-shell-completion fish | source' > ~/.config/fish/completions/uv.fish
+# echo 'uv generate-shell-completion fish | source' > ~/.config/fish/completions/uv.fish
