@@ -33,8 +33,6 @@ brew install \
   pure \
   ripgrep \
   shellcheck \
-  spaceship \
-  tmux \
   yt-dlp \
   zig \
   zsh

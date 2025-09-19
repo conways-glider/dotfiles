@@ -17,22 +17,28 @@ elif [[ "$LOCAL_OS" = "linux" ]]; then
     ./scripts/debian/go.sh
 fi
 
-echo "Checking if zsh is in /etc/shells"
 WHICH_ZSH=$(command -v zsh)
-if ! grep -q "$WHICH_ZSH" /etc/shells; then
-  echo "Adding zsh to /etc/shells"
-  echo "$WHICH_ZSH" | sudo tee -a /etc/shells
+# Check if zsh is installed
+if [[ -x "$WHICH_ZSH" ]]; then
+  echo "Checking if zsh is in /etc/shells"
+  if ! grep -q "$WHICH_ZSH" /etc/shells; then
+    echo "Adding zsh to /etc/shells"
+    echo "$WHICH_ZSH" | sudo tee -a /etc/shells
+  fi
 fi
 
-echo "Checking if fish is in /etc/shells"
 WHICH_FISH=$(command -v fish)
-if ! grep -q "$WHICH_FISH" /etc/shells; then
-  echo "Adding fish to /etc/shells"
-  echo "$WHICH_FISH" | sudo tee -a /etc/shells
-fi
+# Check if fish is installed
+if [[ -x "$WHICH_FISH" ]]; then
+  echo "Checking if fish is in /etc/shells"
+  if ! grep -q "$WHICH_FISH" /etc/shells; then
+    echo "Adding fish to /etc/shells"
+    echo "$WHICH_FISH" | sudo tee -a /etc/shells
+  fi
 
-echo "Setting fish as default shell"
-chsh -s "$WHICH_FISH"
+  echo "Setting fish as default shell"
+  chsh -s "$WHICH_FISH"
+fi
 
 ./scripts/rust.sh
 

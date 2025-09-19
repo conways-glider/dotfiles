@@ -4,11 +4,6 @@ set -eou pipefail
 
 LOCAL_OS=$(uname -s | tr '[:upper:]' '[:lower:]')
 
-# Link zsh config
-echo "Linking zsh config"
-rm -f ~/.zshrc
-ln -sf "$(pwd)"/zsh/zshrc ~/.zshrc
-
 echo "Making .config folder"
 mkdir -p ~/.config
 

@@ -18,7 +18,6 @@ sudo apt -y install \
   zsh \
   fonts-firacode \
   ripgrep \
-  tmux \
   openssh-server \
   git-all \
   vlc \
