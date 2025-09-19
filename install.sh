@@ -15,6 +15,7 @@ elif [[ "$LOCAL_OS" = "linux" ]]; then
     echo "Linux Install"
     ./scripts/debian/apt.sh
     ./scripts/debian/go.sh
+    ./scripts/debian/fish.sh
 fi
 
 WHICH_ZSH=$(command -v zsh)

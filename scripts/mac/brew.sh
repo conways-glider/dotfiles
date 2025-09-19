@@ -16,28 +16,4 @@ brew upgrade
 
 # Install packages
 echo "Installing brew packages"
-brew install \
-  elixir \
-  fish \
-  gallery-dl \
-  go \
-  golangci-lint \
-  helix \
-  k9s \
-  kubectl \
-  kubectx \
-  neovim \
-  nushell \
-  podman \
-  pure \
-  ripgrep \
-  shellcheck \
-  yt-dlp \
-  zig \
-  zsh
-
-brew install --cask goreleaser/tap/goreleaser
-
-# echo "Setting up lldb-dap"
-# brew install llvm
-# ln -s $(brew --prefix)/opt/llvm/bin/lldb-dap $(brew --prefix)/bin/
+brew bundle check --file ./scripts/mac/Brewfile || brew bundle --file ./scripts/mac/Brewfile
