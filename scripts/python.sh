@@ -10,7 +10,10 @@ if [[ ! -x "$(command -v uv)" ]]; then
 fi
 
 # Install ruff
-uv tool install ruff@latest
+if [[ ! -x "$(command -v uv)" ]]; then
+    echo "Installing ruff"
+    uv tool install ruff@latest
+fi
 
 # Set up uv shell completions for fish
 echo 'uv generate-shell-completion fish | source' > ~/.config/fish/completions/uv.fish
