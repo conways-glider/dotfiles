@@ -5,7 +5,7 @@ set -eou pipefail
 # echo "Adding repositories"
 
 echo "Running apt update & apt upgrade"
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade -y
 
 echo "Running apt installs"
 sudo apt -y install \
