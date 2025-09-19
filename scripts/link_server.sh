@@ -15,6 +15,11 @@ echo "Linking fish config"
 rm -rf ~/.config/fish
 ln -sf "$(pwd)"/fish ~/.config/fish
 
+# Link fish config
+echo "Linking fish config"
+rm -rf ~/.config/fish
+ln -sf "$(pwd)"/fish ~/.config/fish
+
 # Link helix config
 echo "Linking helix config"
 rm -rf ~/.config/helix
