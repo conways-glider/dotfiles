@@ -37,9 +37,9 @@ if [[ -x "$WHICH_FISH" ]]; then
     echo "$WHICH_FISH" | sudo tee -a /etc/shells
   fi
 
-  echo "Setting fish as default shell"
+  # echo "Setting fish as default shell"
   # chsh -s "$WHICH_FISH"
-  sudo chsh -s "$WHICH_FISH" $(whoami)
+  # sudo chsh -s "$WHICH_FISH" $(whoami)
 fi
 
 ./scripts/rust.sh
