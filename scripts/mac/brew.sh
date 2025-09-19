@@ -17,7 +17,6 @@ brew upgrade
 # Install packages
 echo "Installing brew packages"
 brew install \
-  bat \
   elixir \
   fish \
   gallery-dl \

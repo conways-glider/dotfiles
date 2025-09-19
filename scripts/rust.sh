@@ -28,4 +28,5 @@ cargo install tinty
 cargo install --locked zellij
 cargo install eza
 cargo install fd-find
+cargo install --locked bat
 # TODO: Maybe install ripgrep here?
