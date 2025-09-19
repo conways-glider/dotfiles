@@ -10,7 +10,7 @@ if [[ ! -x "$(command -v uv)" ]]; then
 fi
 
 # Install ruff
-if [[ ! -x "$(command -v uv)" ]]; then
+if [[ -x "$(command -v uv)" ]]; then
     echo "Installing ruff"
     uv tool install ruff@latest
 fi
