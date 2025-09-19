@@ -1,5 +1,5 @@
 [terminal]
-# shell = { program = "/opt/homebrew/bin/fish", args = ["-c", "zellij"] }
+shell = { program = "/opt/homebrew/bin/fish" }
 
 # [font]
 # size = 14
