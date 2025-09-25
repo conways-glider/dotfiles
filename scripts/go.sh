@@ -10,3 +10,7 @@ echo "Installing go packages and binaries"
 go install github.com/go-delve/delve/cmd/dlv@latest
 go install github.com/google/go-licenses@latest
 go install github.com/antonmedv/fx@latest
+go install github.com/goreleaser/goreleaser/v2@latest
+
+# Install golangci-lint
+curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/HEAD/install.sh | sh -s -- -b $(go env GOPATH)/bin
