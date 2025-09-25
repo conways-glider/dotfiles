@@ -6,8 +6,8 @@ echo "Adding repositories"
 # add-apt-repository universe
 
 # Update apt
-echo "Running apt update & apt upgrade"
-sudo apt update && sudo apt upgrade
+echo "Running apt update"
+sudo apt update
 
 # Install items
 echo "Running apt installs"
