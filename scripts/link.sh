@@ -10,7 +10,15 @@ mkdir -p ~/.config
 # Link zellij config
 echo "Linking zellij config"
 rm -rf ~/.config/zellij
-ln -sf "$(pwd)"/zellij ~/.config/zellij
+mkdir -p ~/.config/zellij
+if [[ "$LOCAL_OS" = "darwin" ]]; then
+    echo "Mac Install"
+    ln -sf "$(pwd)"/zellij/mac_config.kdl ~/.config/zellij/config.kdl
+elif [[ "$LOCAL_OS" = "linux" ]]; then
+    echo "Linux Install"
+    ln -sf "$(pwd)"/zellij/linux_config.kdl ~/.config/zellij/config.kdl
+fi
+
 
 # Link fish config
 echo "Linking fish config"
