@@ -1,5 +1,6 @@
 [terminal]
-shell = { program = "/opt/homebrew/bin/fish" }
+# Login is required for fish to load up correctly
+shell = { program = "/opt/homebrew/bin/fish", args = ["--login"] }
 
 # [font]
 # size = 14
