@@ -26,6 +26,7 @@ git config --global alias.st 'status'
 git config --global alias.a 'add'
 git config --global alias.b 'branch'
 git config --global alias.rhh 'reset --hard HEAD'
+git config --global alias.wt 'worktree'
 
 # .gitignore
 git config --global core.excludesFile '~/.gitignore'
