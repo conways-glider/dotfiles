@@ -27,6 +27,10 @@ git config --global alias.a 'add'
 git config --global alias.b 'branch'
 git config --global alias.rhh 'reset --hard HEAD'
 git config --global alias.wt 'worktree'
+git config --global alias.wta 'worktree add'
+git config --global alias.wtl 'worktree list'
+git config --global alias.wtp 'worktree prune'
+git config --global alias.wtr 'worktree remove'
 
 # .gitignore
 git config --global core.excludesFile '~/.gitignore'
