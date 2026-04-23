@@ -19,6 +19,10 @@ if status is-interactive
         abbr -a -g ls eza
     end
 
+    if type -q mise
+        eval "$(mise activate fish)"
+    end
+
     if type -q tinty
         tinty init
     end
