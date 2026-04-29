@@ -13,7 +13,7 @@ echo "Setting up rust env"
 source "$HOME/.cargo/env"
 
 echo "Installing cargo tools"
-cargo install --locked cargo-about
+cargo install --locked --features cli cargo-about
 cargo install cargo-audit
 cargo install --locked cargo-deny
 cargo install cargo-license
