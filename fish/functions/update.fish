@@ -6,7 +6,7 @@ function update --description 'Update brew packages and the rust toolchain'
         brew update; or set -a failed "brew update"
 
         echo "==> brew upgrade"
-        brew upgrade; or set -a failed "brew upgrade"
+        brew upgrade --yes; or set -a failed "brew upgrade"
 
         echo "==> brew cleanup"
         brew cleanup; or set -a failed "brew cleanup"
